@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                 sh 'Jfrog_Upload_Script.sh'
+                 sh 'Scripts/Jfrog_Upload_Script.sh'
             }
         }
     }
