@@ -14,11 +14,11 @@ pipeline {
             steps {
                 echo "Middle Stage"
             }
-            post {
-                always {
+           // post {
+             //   always {
                    // junit 'target/surefire-reports/*.xml'
-                }
-            }
+              //  }
+         //   }
         }
         stage('Deliver') {
             steps {
