@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                echo "Last Stage"
+                 sh 'Jfrog_Upload_Script.sh'
             }
         }
     }
